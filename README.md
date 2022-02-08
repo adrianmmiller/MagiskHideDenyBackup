@@ -62,6 +62,10 @@ monetize this module or its content without all parties permission. The module c
 for this intent.**
 
 
+### Changelog ###
+
+Please see: https://github.com/stylemessiah/MagiskHideDenyBackup/blob/main/CHANGELOG.md
+
 ### Project Stats ###
 
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/stylemessiah/MagiskHideDenyBackup?label=Release&style=plastic)
