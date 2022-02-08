@@ -14,12 +14,13 @@ but with magisk.db schema changes this has now ceased to be a safe easy trick.
 
 So the way now (inspired by osm0sis from XDA) is to dump the list of packages and processes via the 
 
-magiskhide ls (or magisk --deny ls) 
+```magiskhide ls (or magisk --deny ls) ```
 
 command to a text file and reimport it after a new ROM flash (assuming you have kept a copy off device if you do 
 have to format data).
 
-MagiskHideDenyBackup Usage:
+
+**MagiskHideDenyBackup Usage:**
 
 	Install via Magisk Manager or Fox Module Manager
 
@@ -33,7 +34,7 @@ MagiskHideDenyBackup Usage:
 	again at any time to update /sdcard/MagiskList.txt 
 	
 
-MagiskHideDenyRestore Usage:
+**MagiskHideDenyRestore Usage:**
 
 	1) Make sure /sdcard/MagiskList.txt exists and contains the packages and processes you want to hide/deny
 	2) If youre using a Magisk version with MagiskHide, please make sure to enable it before continuing. 
@@ -44,6 +45,9 @@ MagiskHideDenyRestore Usage:
     - Writes a log file to /sdcard/MagiskHideImportExport.log
     
     4) Reboot
+    
+    The module will remain installed, unless removed, after the process completes.
+    It is safe to leave installed and ignored if you like.
 
 Both modules should detect which magisk variety youre using by listing the magisk applets and finding either magiskhide, or not...
 
