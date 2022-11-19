@@ -48,8 +48,6 @@ have to format data).
     
     The module will remain installed, unless removed, after the process completes.
     It is safe to leave installed and ignored if you like.
-    
-    Also if you want ot create a new backup, just reflash the module....simples
 
 Both modules should detect which magisk variety youre using by listing the magisk applets and finding either magiskhide, or not...
 
