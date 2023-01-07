@@ -5,4 +5,4 @@ versionCode=11
 author=73sydney
 description=Backs up items from MagiskHide List or Deny List to /sdcard/MagiskList.txt 
 support=
-updateJson=https://raw.githubusercontent.com/stylemessiah/MagiskHideDenyBackup/main/update.json
+updateJson=
