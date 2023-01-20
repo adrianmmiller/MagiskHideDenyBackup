@@ -1,7 +1,6 @@
-### v1.1
+### First release
 
-- Returning the module to my own personal repo for now after androidacy issues. May resubmit to Alt Repo 
-in the near future if all goes well.
+- Returning the module to my own personal repo for now after androidacy issues. 
 
 ### v1.2
 
