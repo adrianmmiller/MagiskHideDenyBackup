@@ -1,4 +1,4 @@
-### First release
+### v1.1
 
 - Returning the module to my own personal repo for now after androidacy issues. 
 
