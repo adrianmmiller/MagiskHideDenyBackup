@@ -1,8 +1,0 @@
-id=MagiskHideDenyBackup
-name=MagiskHideDenyBackup
-version=v1.1
-versionCode=11
-author=73sydney
-description=Backs up items from MagiskHide List or Deny List to /sdcard/MagiskList.txt 
-support=
-updateJson=
