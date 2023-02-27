@@ -8,7 +8,7 @@ Backs up items from MagiskHide List or Deny List to /sdcard/MagiskList.txt
 
 **PLEASE NOTE:** 
 
-- We (myself, Osm0sis, ipdev and pndwal) all tried to get this backup and restore functionality (along with back for the superuser list - i have modules for that too) added natively to Magisk Manager via Magisk's Github, lets just say it was rejected, so here we are...
+- We (myself, Osm0sis, ipdev and pndwal) all tried to get this backup and restore functionality (along with backup/restore for the superuser list - i have modules for that too) added natively to Magisk Manager via Magisk's Github, lets just say it was rejected, so here we are...
 - These/There are **TWO** very discinct modules that work together, one backs up ([MagiskHideDenyBackup](https://github.com/adrianmmiller/MagiskHideDenyBackup)),
 and one restores ([MagiskHideDenyRestore](https://github.com/adrianmmiller/MagiskHideDenyRestore)). 
 You need **BOTH** modules. 
