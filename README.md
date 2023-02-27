@@ -31,12 +31,14 @@ have to format data).
 ---
 ## **MagiskHideDenyBackup Usage:**
 ---
-Install via Magisk Manager or Fox Module Manager
+1) Install MagiskHideDenyBackup module from [Releases section](https://github.com/adrianmmiller/MagiskHideDenyBackup/releases/latest) via Magisk Manager or Fox Module Manager
 
-- Backs up your magiskhide (or magisk deny) list to /sdcard/MagiskList.txt
-- Writes a log file to /sdcard/MagiskHideDenyExport.log
+    This:
+
+    - Backs up your magiskhide (or magisk deny) list to /sdcard/MagiskList.txt
+    - Writes a log file to /sdcard/MagiskHideDenyExport.log
 	
-Copy /sdcard/MagiskList.txt off device for safe keeping
+2) Copy /sdcard/MagiskList.txt off device for safe keeping
 	
 The module will remain installed, unless removed, after the process completes.
 It is safe to leave installed and ignored if you like. You can always flash it
