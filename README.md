@@ -41,6 +41,9 @@ have to format data).
 2) Copy /sdcard/MagiskList.txt off device for safe keeping
 	
 The module will remain installed, unless removed, after the process completes.
+
+The only active file in the entire module is /common/install.sh, and it is commented.
+
 It is safe to leave installed and ignored if you like. You can always flash it
 again at any time to update /sdcard/MagiskList.txt 
 
