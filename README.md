@@ -1,12 +1,21 @@
 # MagiskHideDenyBackup
+
+*Inspired by osm0sis from XDA*
+
 A simple module to backup any apps you have in your MagiskHide or Deny lists for easy restore on new ROM flash
 
 Backs up items from MagiskHide List or Deny List to /sdcard/MagiskList.txt
 
-*Inspired by osm0sis from XDA*
+**PLEASE NOTE:** 
+
+- We (myself, Osm0sis, ipdev and pndwal) all tried to get this backup and restore functionality added natively to Magisk Manager via Magisk's Github, lets just say it was rejected, so here we are...
+- These/There are **TWO** very discinct modules that work together, one backs up ([MagiskHideDenyBackup](https://github.com/adrianmmiller/MagiskHideDenyBackup)),
+and one restores ([MagiskHideDenyRestore](https://github.com/adrianmmiller/MagiskHideDenyRestore)). 
+You need **BOTH** modules. 
 
 For the terminally lazy (like me), ive created a couple of simple magisk modules to backup and restore the 
 packages and process you may have hidden via Magisk's MagiskHide (old magisk/custom) or Deny List (canary/alpha). 
+
 In the old days, a trick (to essentially not have to retick all packages and process to hide - especially handy 
 if you wanted to have the packages hidden before restoring your apps via something like Migrate, to make sure 
 apps never had a chance to see root) was to simply backup /data/adb/magisk.db and restore it on ROM flashes. 
@@ -14,42 +23,29 @@ but with magisk.db schema changes this has now ceased to be a safe easy trick.
 
 So the way now (inspired by osm0sis from XDA) is to dump the list of packages and processes via the 
 
-```magiskhide ls (or magisk --deny ls) ```
+```magiskhide ls (or magisk --deny ls)```
 
 command to a text file and reimport it after a new ROM flash (assuming you have kept a copy off device if you do 
 have to format data).
 
+---
+## **MagiskHideDenyBackup Usage:**
+---
+Install via Magisk Manager or Fox Module Manager
 
-**MagiskHideDenyBackup Usage:**
-
-	Install via Magisk Manager or Fox Module Manager
-
-    - Backs up your magiskhide (or magisk deny) list to /sdcard/MagiskList.txt
-    - Writes a log file to /sdcard/MagiskHideDenyExport.log
+- Backs up your magiskhide (or magisk deny) list to /sdcard/MagiskList.txt
+- Writes a log file to /sdcard/MagiskHideDenyExport.log
 	
-	Copy /sdcard/MagiskList.txt off device for safe keeping
+Copy /sdcard/MagiskList.txt off device for safe keeping
 	
-	The module will remain installed, unless removed, after the process completes.
-	It is safe to leave installed and ignored if you like. You can always flash it
-	again at any time to update /sdcard/MagiskList.txt 
-	
+The module will remain installed, unless removed, after the process completes.
+It is safe to leave installed and ignored if you like. You can always flash it
+again at any time to update /sdcard/MagiskList.txt 
 
-**MagiskHideDenyRestore Usage:**
+---
+#### **To restore your backup after a new ROM flash etc, see the [MagiskHideDenyRestore Module Repo](https://github.com/adrianmmiller/MagiskHideDenyRestore) for the partner module to restore your backup**
+---
 
-	1) Make sure /sdcard/MagiskList.txt exists and contains the packages and processes you want to hide/deny
-	2) If youre using a Magisk version with MagiskHide, please make sure to enable it before continuing. 
-	   Magisk with Deny List does not need to be enabled for restore to work
-	3) Install MagiskHideDenyRestore module https://github.com/adrianmmiller/MagiskHideDenyRestore via Magisk Manager or Fox Module Manager
-
-    - Restores your magiskhide (or magisk deny) list from /sdcard/MagiskList.txt
-    - Writes a log file to /sdcard/MagiskHideImportExport.log
-    
-    4) Reboot
-    
-    The module will remain installed, unless removed, after the process completes.
-    It is safe to leave installed and ignored if you like.
-
-Both modules should detect which magisk variety youre using by listing the magisk applets and finding either magiskhide, or not...
 
 **Please note:** the included LICENSE **only** covers the module components provided by the excellent work of Zack5tpg's 
 Magisk Module Extended, which is available for here for module creators
