@@ -39,7 +39,7 @@ have to format data).
 	1) Make sure /sdcard/MagiskList.txt exists and contains the packages and processes you want to hide/deny
 	2) If youre using a Magisk version with MagiskHide, please make sure to enable it before continuing. 
 	   Magisk with Deny List does not need to be enabled for restore to work
-	3) Install via Magisk Manager or Fox Module Manager
+	3) Install MagiskHideDenyRestore module https://github.com/adrianmmiller/MagiskHideDenyRestore via Magisk Manager or Fox Module Manager
 
     - Restores your magiskhide (or magisk deny) list from /sdcard/MagiskList.txt
     - Writes a log file to /sdcard/MagiskHideImportExport.log
